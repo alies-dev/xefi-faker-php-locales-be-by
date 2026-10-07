@@ -12,6 +12,9 @@
   "authors": [
     {
       "name": "Martin Soenen"
+    },
+    {
+      "name": "Alies Lapatsin"
     }
   ],
   "require": {
