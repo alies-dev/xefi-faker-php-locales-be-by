@@ -25,7 +25,7 @@ final class TextExtensionTest extends TestCase
         $result = $this->faker->words(count($words));
 
         $result = preg_split('/\s+/', $result);
-        $words = array_map(function ($word) { return strtolower(preg_replace('/[.,]/', '', $word)); }, $words);
+        $words = array_map(function ($word) { return mb_strtolower(preg_replace('/[.,]/', '', $word)); }, $words);
 
         $this->assertEqualsCanonicalizing(
             $words,
